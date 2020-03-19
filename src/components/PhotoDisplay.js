@@ -16,10 +16,13 @@ export default function PhotoDisplay() {
 	}, []);
 	return (
 		<div className="photo">
-			{PhotoDisplay.data.map(photo => {
+			Title : {image.title};
+			<img clasName="pod" src={image.hdurl} alt="nasa image of the day" />;
+			Whats the story behind this photo? {image.explanation}
+			{/* {PhotoDisplay.map(photo => {
 				console.log(photo);
 				// return photo.hdurl;
-			})}
+			})} */}
 		</div>
 	);
 }
