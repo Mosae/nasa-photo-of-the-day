@@ -10,6 +10,7 @@ function App() {
 			<div className="header_container">
 				{/* logo comes in here later */}
 				<h1>NASA PHOTO OF THE DAY</h1>
+				<PhotoDisplay />
 			</div>
 		</div>
 	);
