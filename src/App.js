@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
+//import logo
+import PhotoDisplay from './components/PhotoDisplay.js';
+//import Footer from './components/Footer.js
 
 function App() {
 	return (
 		<div className="App">
-			<p>
-				Read through the instructions in the README.md file to build your NASA
-				app! Have fun 🚀! yes I will
-			</p>
+			<div className="header_container">
+				{/* logo comes in here later */}
+				<h1>NASA PHOTO OF THE DAY</h1>
+			</div>
 		</div>
 	);
 }
