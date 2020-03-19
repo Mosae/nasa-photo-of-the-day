@@ -8,10 +8,18 @@ export default function PhotoDisplay() {
 			.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 			.then(response => {
 				console.log(response.data);
+				setImage(response.data);
 			})
 			.catch(error => {
 				console.log('data was not returned', error);
 			});
 	}, []);
-	return <div className="photo">Photo</div>;
+	return (
+		<div className="photo">
+			{PhotoDisplay.data.map(photo => {
+				console.log(photo);
+				// return photo.hdurl;
+			})}
+		</div>
+	);
 }
