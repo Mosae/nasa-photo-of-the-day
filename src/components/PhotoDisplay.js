@@ -14,13 +14,14 @@ export default function PhotoDisplay() {
 				console.log('data was not returned', error);
 			});
 	}, []);
+
 	return (
 		<div className="photo">
 			Title : {image.title};
-			<img clasName="pod" src={image.hdurl} alt="nasa image of the day" />;
-			Whats the story behind this photo? {image.explanation}
+			<img clasName="pod" src={image.hdurl} alt="nasa img of the day" />; Whats
+			the story behind this photo? {image.explanation}
 			{/* {PhotoDisplay.map(photo => {
-				console.log(photo);
+                console.log(photo);
 				// return photo.hdurl;
 			})} */}
 		</div>
